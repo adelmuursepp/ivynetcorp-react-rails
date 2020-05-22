@@ -9,15 +9,16 @@ import Home from './Home';
 import Login from './Login';
 import SignUp from './SignUp';
 import PasswordForget from './PasswordForget';
-import registerServiceWorker from './registerServiceWorker';
 import { BrowserRouter, Route, Switch } from 'react-router-dom';
+
+
 
 class Root extends React.Component {
   render() {
   	return(
   		<BrowserRouter basename={'/'} >
 		  	<Switch>
-			  <Route exact path={`${process.env.PUBLIC_URL}/`} component={Home}/>
+			  <Route path={`${process.env.PUBLIC_URL}/`} exact component={Home}/>
 			  <Route path={`${process.env.PUBLIC_URL}/about`} component={About}/> 
 			  <Route path={`${process.env.PUBLIC_URL}/products`} component={Products}/> 
 			  <Route path={`${process.env.PUBLIC_URL}/services`} component={Services}/> 
@@ -28,9 +29,16 @@ class Root extends React.Component {
 			  <Route path={`${process.env.PUBLIC_URL}/sign-up`} component={SignUp}/>  
 			</Switch>
 		</BrowserRouter>
+
   	);
   }
  }
 
-ReactDOM.render(<Root />, document.getElementById('root'));
-registerServiceWorker();
+//  export default Root;
+
+ document.addEventListener('DOMContentLoaded', () => {
+	ReactDOM.render(<Root />,
+		document.body.appendChild(document.createElement('div')),
+		)
+ })
+// registerServiceWorker();
