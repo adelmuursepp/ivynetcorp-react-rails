@@ -6,6 +6,7 @@ import 'popper.js'
 import "bootstrap";
 import "../dorsin/index.jsx";
 import './hello_react.jsx';
+import "../style/application.scss"
 // import Root from '../dorsin/index.jsx'
 
 // import React from 'react';

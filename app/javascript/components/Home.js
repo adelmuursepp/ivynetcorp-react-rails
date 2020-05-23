@@ -1,18 +1,18 @@
 import React from 'react';
-import Navbar from '../dorsin/components/Navbar';
-import ProductsComponentIntro from '../dorsin/components/ProductsComponentIntro';
-import ServicesComponentIntro from '../dorsin/components/ServicesComponentIntro';
-import AboutIntro from '../dorsin/components/AboutIntro';
-import SolutionsIntro from '../dorsin/components/SolutionsIntro';
-import Contact from '../dorsin/components/Contact';
-import SocialMedia from '../dorsin/components/SocialMedia';
-import Footer from '../dorsin/components/Footer';
-import FooterLinks from '../dorsin/components/FooterLinks';
-import ContactForm from "../dorsin/components/ContactForm"
-// import videoComponent from './dorsin/components/Video'
+import Navbar from './components/Navbar';
+import ProductsComponentIntro from './components/ProductsComponentIntro';
+import ServicesComponentIntro from './components/ServicesComponentIntro';
+import AboutIntro from './components/AboutIntro';
+import SolutionsIntro from './components/SolutionsIntro';
+import Contact from './components/Contact';
+import SocialMedia from './components/SocialMedia';
+import Footer from './components/Footer';
+import FooterLinks from './components/FooterLinks';
+import ContactForm from "./components/ContactForm"
+// import videoComponent from './components/Video'
 import { Link } from 'react-router-dom';
-import Aux from '../dorsin/hoc/Aux_';
-import About from '../dorsin/About';
+import Aux from './hoc/Aux_';
+import About from './About';
 
 class Home extends React.Component {
   render() {
@@ -41,16 +41,16 @@ class Home extends React.Component {
 
                 {/* <videoComponent /> */}
                 {/* Features Component*/}
-                {/* <AboutIntro /> */}
+                <AboutIntro />
 
                 {/* Products Component*/}
-                {/* <ProductsComponentIntro /> */}
+                <ProductsComponentIntro />
 
                 {/* Services Component*/}
-                {/* <ServicesComponentIntro /> */}
+                <ServicesComponentIntro />
 
                 {/* Solutions Component*/}
-                {/* <SolutionsIntro /> */}
+                <SolutionsIntro />
                 
 
                 {/* Descriptions Component*/}
@@ -73,16 +73,16 @@ class Home extends React.Component {
                 {/* <Blog /> */}
 
                 {/* Contact Component*/}
-                {/* <ContactForm />
+                 <ContactForm />
 
                 {/* SocialMedia Component*/}
-                {/* <SocialMedia /> */}
+                <SocialMedia />
                 
                 {/* Footer Component*/}
-                {/* <Footer /> */} */}
+                {/* <Footer /> */} 
 
                 {/* FooterLinks Component*/}
-                {/* <FooterLinks /> */}
+                <FooterLinks />
 
                 {/* Switcher Component*/}
                {/* <Switcher />  */}
